@@ -1,7 +1,7 @@
 import type { Config } from './types';
 
 const LOVE_DATE = '2024-08-02';
-const MARRIAGE_DATE = '2024-05-20';
+const MARRIAGE_DATE = '2026-05-20';
 
 export const DEFAULT_CONFIG: Config = {
   boy: '小狗',
@@ -9,9 +9,9 @@ export const DEFAULT_CONFIG: Config = {
   loveDate: LOVE_DATE,
   marriageDate: MARRIAGE_DATE,
   milestones: [
-    { date: '2024-03-14', label: '婚礼', icon: '💍', story: '我们的婚礼纪念日。' },
-    { date: MARRIAGE_DATE, label: '领证', icon: '💑', story: '我们的领证纪念日。' },
     { date: LOVE_DATE, label: '相恋', icon: '💕', story: '2024年8月2日 23:59:59，我们的相恋时刻。' },
+    { date: '2026-03-14', label: '婚礼', icon: '💍', story: '我们的婚礼纪念日。' },
+    { date: MARRIAGE_DATE, label: '领证', icon: '💑', story: '我们的领证纪念日。' },
   ],
   motto: '一屋两人，三餐四季',
   quotes: ['一屋两人，三餐四季'],
@@ -79,7 +79,7 @@ export const DEFAULT_CONFIG: Config = {
     {
       label: '婚礼纪念日',
       icon: '💍',
-      date: '2024-03-14',
+      date: '2026-03-14',
       easterEggTemplates: {
         soon: '💍 再过 {gap} 天就是{displayLabel}，期待下一次旅行~',
         today: '💍 今天就是{displayLabel}，纪念我们的婚礼！',
