@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://love.example.com/sitemap-index.xml
+Sitemap: https://xian9ji.github.io/love-page/sitemap-index.xml

@@ -47,7 +47,7 @@ export const DEFAULT_CONFIG: Config = {
     { url: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=400&fit=crop', caption: '牵手' },
   ],
   googleAnalyticsId: '',
-  siteUrl: 'https://love.example.com',
+  siteUrl: 'https://xian9ji.github.io/love-page',
   siteName: 'Love Page',
   siteLocale: 'zh-CN',
   siteImage: '/og.png',

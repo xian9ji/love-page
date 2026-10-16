@@ -39,13 +39,13 @@ export function GET(): Response {
   const imageSrc = resolveSiteImage(CONFIG);
 
   const manifest = {
-    id: '/',
+    id: `${import.meta.env.BASE_URL}/`,
     name: siteName,
     short_name: shortName,
     description,
     lang: 'zh-CN',
-    start_url: '/',
-    scope: '/',
+    start_url: `${import.meta.env.BASE_URL}/`,
+    scope: `${import.meta.env.BASE_URL}/`,
     display: 'standalone',
     orientation: 'portrait',
     theme_color: '#0a0a1a',
