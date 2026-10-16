@@ -46,9 +46,9 @@ export const DEFAULT_CONFIG: Config = {
     { label: '纪念日', value: 2, icon: '💕' },
   ],
   wishes: [
+    { text: '一起去香港', done: true },
+    { text: '一起看日出', done: false },
     { text: '一起去冰岛看极光', done: false },
-    { text: '每年拍一张合影', done: true },
-    { text: '一起学一门新技能', done: false },
   ],
   timers: [
     { label: '相恋时光', icon: '💕', date: '2024-08-02T23:59:59+08:00' },
