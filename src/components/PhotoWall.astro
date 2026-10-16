@@ -30,10 +30,13 @@ const ui = {
         <h3 class="photo-wall-title">📷 {ui.title}</h3>
         <div class="photo-wall-grid" id="photoWallGrid">
           {config.photos.map((p, i) => (
+            <article>
             <div class="photo-wall-item reveal" style={`--i: ${i}`} data-url={p.url} data-caption={p.caption ?? ''} data-index={i} role="button" tabindex="0">
               <img src={p.url} alt={p.caption ?? ''} loading="lazy" />
               {p.caption && <span class="photo-wall-caption">{p.caption}</span>}
             </div>
+            {p.href && <a href={p.href} class="block text-center text-pink-200 underline py-3">查看旅行记录 →</a>}
+            </article>
           ))}
         </div>
       </div>

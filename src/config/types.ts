@@ -9,6 +9,7 @@ export interface Milestone {
 
 export interface Photo {
   url: string;
+  href?: string;
   caption?: string;
 }
 

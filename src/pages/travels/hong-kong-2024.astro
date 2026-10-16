@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { CONFIG } from '../../config';
+import { getMessages } from '../../i18n/utils';
+const messages = getMessages('zh-CN');
+---
+<BaseLayout title="港风 · 我们的时光" config={CONFIG} locale="zh-CN" messages={messages}>
+  <main class="w-full max-w-4xl mx-auto px-6 py-12">
+    <a href="/love-page/" class="text-pink-200 underline">← 回到我们的时光</a>
+    <article class="glass rounded-3xl p-6 sm:p-10 mt-6">
+      <p class="text-pink-200/70 tracking-widest">我们的旅行</p>
+      <h1 class="font-hand text-4xl sm:text-5xl mt-3">港风</h1>
+      <p class="text-white/60 mt-4">香港 · <time datetime="2024-02-01">2024年2月1日</time></p>
+      <p class="text-xl leading-relaxed my-8">维多利亚港真美</p>
+      <a href="/love-page/photos/hong-kong-2024-02-01.jpg" target="_blank" rel="noopener" aria-label="查看维多利亚港照片大图">
+        <img src="/love-page/photos/hong-kong-2024-02-01.jpg" alt="香港维多利亚港的海面与城市天际线" width="1600" height="1200" class="w-full h-auto rounded-2xl" />
+      </a>
+      <p class="text-white/50 text-sm mt-4">小狗 ♥ 宝宝 · 点击照片查看大图</p>
+    </article>
+  </main>
+</BaseLayout>

@@ -28,9 +28,7 @@ export const DEFAULT_CONFIG: Config = {
   },
   secretMessage: '感谢相遇，余生请多指教。♥',
   photos: [
-    { url: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=400&fit=crop', caption: '婚礼' },
-    { url: 'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=400&h=400&fit=crop', caption: '相伴' },
-    { url: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=400&fit=crop', caption: '牵手' },
+    { url: '/love-page/photos/hong-kong-2024-02-01.jpg', caption: '港风 · 香港 · 2024年2月1日', href: '/love-page/travels/hong-kong-2024/' },
   ],
   googleAnalyticsId: '',
   siteUrl: 'https://xian9ji.github.io/love-page',
@@ -43,7 +41,7 @@ export const DEFAULT_CONFIG: Config = {
   shareTemplates: ['classic', 'minimal', 'romantic'],
   statsMode: 'hybrid',
   stats: [
-    { label: '一起旅行', value: 12, icon: '✈️' },
+    { label: '已记录旅行', value: 1, icon: '✈️' },
     { label: '共同爱好', value: 8, icon: '🎯' },
     { label: '纪念日', value: 2, icon: '💕' },
   ],
