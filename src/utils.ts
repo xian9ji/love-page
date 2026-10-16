@@ -17,22 +17,16 @@ export interface DiffResult {
 }
 
 export function diffFrom(dateStr: string): DiffResult {
-  const start = new Date(dateStr + 'T00:00:00');
+  const start = new Date(dateStr.includes('T') ? dateStr : `${dateStr}T00:00:00+08:00`);
   const now = new Date();
 
-  let years = now.getFullYear() - start.getFullYear();
-  let lastAnniv = new Date(
-    start.getFullYear() + years,
-    start.getMonth(),
-    start.getDate()
-  );
+  let years = now.getUTCFullYear() - start.getUTCFullYear();
+  let lastAnniv = new Date(start);
+  lastAnniv.setUTCFullYear(start.getUTCFullYear() + years);
   if (lastAnniv > now) {
     years--;
-    lastAnniv = new Date(
-      start.getFullYear() + years,
-      start.getMonth(),
-      start.getDate()
-    );
+    lastAnniv = new Date(start);
+    lastAnniv.setUTCFullYear(start.getUTCFullYear() + years);
   }
 
   const ms = now.getTime() - lastAnniv.getTime();

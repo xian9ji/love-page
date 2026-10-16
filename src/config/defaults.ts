@@ -1,34 +1,20 @@
 import type { Config } from './types';
 
-const LOVE_DATE = '2020-01-01';
-const MARRIAGE_DATE = '2022-05-20';
+const LOVE_DATE = '2024-08-02';
+const MARRIAGE_DATE = '2024-05-20';
 
 export const DEFAULT_CONFIG: Config = {
-  boy: 'Mr Li',
-  girl: 'Mrs Wang',
+  boy: '小狗',
+  girl: '宝宝',
   loveDate: LOVE_DATE,
   marriageDate: MARRIAGE_DATE,
   milestones: [
-    { date: LOVE_DATE, label: '相恋', icon: '💕', story: '那天我们在一起了，从此每一天都多了一份牵挂。' },
-    { date: MARRIAGE_DATE, label: '领证', icon: '💑', story: '拿着小红本走出民政局，阳光正好。从此我们是法律意义上的「我们」了。' },
-    { date: '2022-10-01', label: '婚礼', icon: '💍', story: '在亲友的见证下，我们许下誓言。' },
-    { date: '2023-01-15', label: '蜜月', icon: '✈️', story: '第一次一起远行，留下美好回忆。' },
+    { date: '2024-03-14', label: '婚礼', icon: '💍', story: '我们的婚礼纪念日。' },
+    { date: MARRIAGE_DATE, label: '领证', icon: '💑', story: '我们的领证纪念日。' },
+    { date: LOVE_DATE, label: '相恋', icon: '💕', story: '2024年8月2日 23:59:59，我们的相恋时刻。' },
   ],
-  quotes: [
-    "始于初见，止于终老",
-    "愿有岁月可回首，且以深情共白头",
-    "斯人若彩虹，遇上方知有",
-    "春风十里，不如你",
-    "与君初相识，犹如故人归",
-    "愿得一心人，白首不相离",
-    "十年如一日，一日胜十年",
-    "柴米油盐是你，星辰大海也是你",
-    "执子之手，与子偕老",
-    "岁月漫长，有你便是归途",
-    "从青丝到白发，从心动到心安",
-    "一屋两人三餐四季，十年如故",
-    "平淡日子里，你是最温柔的惊喜"
-  ],
+  motto: '一屋两人，三餐四季',
+  quotes: ['一屋两人，三餐四季'],
   music: {
     enabled: false,
     autoPlay: false,
@@ -48,12 +34,12 @@ export const DEFAULT_CONFIG: Config = {
   ],
   googleAnalyticsId: '',
   siteUrl: 'https://xian9ji.github.io/love-page',
-  siteName: 'Love Page',
+  siteName: '我们的时光',
   siteLocale: 'zh-CN',
   siteImage: '/og.png',
   siteLogo: '/og.png',
   seoDescription:
-    'Mr Li 与 Mrs Wang 专属爱页面 · 相恋于 2020，结婚于 2022，始于初见，止于终老。记录我们的恋爱与婚姻时光、里程碑故事与纪念日倒计时。',
+    '小狗与宝宝的时光纪念册 · 一屋两人，三餐四季。记录相恋、领证与婚礼的重要时刻。',
   shareTemplates: ['classic', 'minimal', 'romantic'],
   statsMode: 'hybrid',
   stats: [
@@ -67,7 +53,7 @@ export const DEFAULT_CONFIG: Config = {
     { text: '一起学一门新技能', done: false },
   ],
   timers: [
-    { label: '相恋时光', icon: '💕', date: LOVE_DATE },
+    { label: '相恋时光', icon: '💕', date: '2024-08-02T23:59:59+08:00' },
     { label: '婚姻时光', icon: '💍', date: MARRIAGE_DATE },
   ],
   includeDefaultAnniversaries: false,
@@ -93,13 +79,13 @@ export const DEFAULT_CONFIG: Config = {
       },
     },
     {
-      label: '蜜月纪念日',
-      icon: '✈️',
-      date: '2023-01-15',
+      label: '婚礼纪念日',
+      icon: '💍',
+      date: '2024-03-14',
       easterEggTemplates: {
-        soon: '✈️ 再过 {gap} 天就是{displayLabel}，期待下一次旅行~',
-        today: '✈️ 今天就是{displayLabel}，纪念我们的第一次远行！',
-        celebrate: '{displayLabel}快乐，愿我们永远在路上',
+        soon: '💍 再过 {gap} 天就是{displayLabel}，期待下一次旅行~',
+        today: '💍 今天就是{displayLabel}，纪念我们的婚礼！',
+        celebrate: '{displayLabel}快乐，愿我们携手走过每个四季',
       },
     },
   ],
